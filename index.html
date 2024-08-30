@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitanda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Quitanda</h1>
+        <div class="product">
+            <div class="selectProduct">
+                <label for="product-select">Escolha um fruta:</label>
+                <select id="product-select">
+                <option value="10">Laranja - R$ 1,50</option>
+                <option value="20">Maça - R$ 3,00</option>
+                <option value="30">Banana - R$ 2,00</option>
+                </select>
+            </div>
+            
+            <div class="selectQuantity">
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+
+            <div class="button">
+                <button id="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            
+        </div>
+
+        <h2>Carrinho</h2>
+    
+        <div class="cart">
+             
+             <ul id="cart-items">
+                <!-- Produtos adicionados aparecerão aqui -->
+             </ul>
+            <h3>Total: R$ <span id="total-price">0</span></h3>
+
+        </div>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
