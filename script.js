@@ -14,7 +14,7 @@ addToCartButton.addEventListener('click', () => {
 
     // Adiciona o produto ao carrinho
     const cartItem = document.createElement('li');
-    cartItem.textContent = `${quantity} x ${productName} - R$ ${(productPrice * quantity).toFixed(2)}`;
+    cartItem.textContent = `${quantity}x ${productName} - R$ ${(productPrice * quantity).toFixed(2)}`;
     cartItems.appendChild(cartItem);
 
     // Atualiza o total
