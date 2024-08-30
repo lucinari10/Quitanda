@@ -123,3 +123,10 @@ button#add-to-cart:hover{
 #total-price {
     font-weight: bold;
 }
+
+p{
+    position: relative;
+    top: 20px;
+    color: gray;
+    font-size: 10px;
+}
