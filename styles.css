@@ -246,6 +246,7 @@ p {
         font-size: 14px; /* Reduzindo o tamanho da fonte dos itens do carrinho */
     }
     .add-product{
-        width: 340px;
+        width: 300px;
+        margin-top: 170px;
     }
 }
