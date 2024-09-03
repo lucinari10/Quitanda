@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quitanda</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     
+    
 
     <div class="container">
-        <h1>Quitanda</h1>
+            <h1 class="tittle" >Quitanda</h1>
         <div class="product">
             <div class="selectProduct">
                 <label for="product-select">Escolha um fruta:</label>
@@ -31,11 +33,41 @@
                 <input type="number" id="quantity" value="1" min="1">
             </div>
 
-            <div class="button">
-                <button id="add-to-cart">Adicionar ao Carrinho</button>
+            <div class="buttons">
+
+                <div class="button">
+                    <button id="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+    
+                
+                    <!-- Botão para mostrar o formulário de adicionar novo produto -->
+                    <button id="show-add-product-form" class="icon-button"> Adicionar Novo Produto</button>
+                
+                    <div class="actionScriptBackground">
+                    <!-- Formulário para adicionar novo produto (escondido por padrão) -->
+                        <div id="add-product-form" class="add-product" >
+                            <div class="nameProduct">
+                                <label class="productName" for="new-product-name">Produto:</label>
+                                <input class="inputName" type="text" id="new-product-name" placeholder="Nome do Produto">
+                            </div>
+                            
+        
+                            <div class="price">
+                                <label class="priceTittle" for="new-product-price">Preço:</label>
+                                <input class="inputPrice" type="number" id="new-product-price" placeholder="Preço">
+                            </div>
+        
+                            <button class="buttonAdd" id="add-new-product">Adicionar Produto</button>
+                        </div>
+                </div>
+                
+
             </div>
             
+            
         </div>
+
+
 
         <h2>Carrinho</h2>
     
