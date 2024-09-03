@@ -8,6 +8,7 @@ const newProductPrice = document.getElementById('new-product-price');
 const addNewProductButton = document.getElementById('add-new-product');
 const showAddProductFormButton = document.getElementById('show-add-product-form');
 const addProductForm = document.getElementById('add-product-form');
+const actionScriptBackground = document.getElementById('action-Script-Background');
 
 let totalPrice = 0;
 
@@ -45,6 +46,7 @@ addNewProductButton.addEventListener('click', () => {
 
         // Esconde o formulário após adicionar o produto
         addProductForm.style.display = 'none';
+        actionScriptBackground.style.display = 'none';
     } else {
         alert('Por favor, insira um nome válido e um preço positivo.');
     }
@@ -52,9 +54,11 @@ addNewProductButton.addEventListener('click', () => {
 
 // Função para mostrar/esconder o formulário de adicionar novo produto
 showAddProductFormButton.addEventListener('click', () => {
-    if (addProductForm.style.display === 'none') {
-        addProductForm.style.display = 'block';
-    } else {
+    if (addProductForm.style.display === 'block' && actionScriptBackground.style.display === 'block' ) {
+        actionScriptBackground.style.display ='none'
         addProductForm.style.display = 'none';
+    } else {
+        actionScriptBackground.style.display = 'flex'
+        addProductForm.style.display = 'flex';
     }
 });
